@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UNS - Búsqueda</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="busqueda.css"/>
+<script src="busqueda.js"></script>
+</head>
+<body>
+    
+<div><h1>UNS</h1></div>
+	
+    <nav>
+        <ul>
+        <li><a href="../index.html">Bienvenido</a></li>
+        <li><a href="../Noticias/noticias.xml">Noticias</a></li>
+        <li><a href="../Mapa/mapa.html">Mapa y tiempo</a></li>
+        <li class="selected"><a href="../Busqueda/busqueda.html">Búsquedas</a></li>
+        <li><a href="../BBDD/bbdd.html">Base de datos</a></li>
+		<li><a href="../Juego/juego.html">Juego</a></li>
+        <li><a href="../About/about.html">Autor</a></li>
+        </ul>
+    </nav>
+    
+<h2>Busca imágenes en <a href='https://pixabay.com/'>Pixabay</a> al especificar un tag con el que esten identificadas</h2>
+    
+<form name=formulario>
+    
+    <p>*Por favor introduce una sola palabra</p>
+    <input type="text" name="tag" size="25">
+    <input type="button" value="Buscar" onClick="fotos.cargarDatos(tag.value);">
+    
+</form>
+    
+<div id="outputDiv"></div>
+    
+<footer>
+      <a href="https://validator.w3.org/check?uri=referer"><img
+          src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"
+          alt="HTML5 Válido" title="HTML5 Válido" height="64" width="63" /></a>
+        
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="¡CSS Válido!" />
+      </a>
+        
+</footer>
+</body>
+</html>

@@ -1,0 +1,138 @@
+/* Specificity = 001 */
+body {
+      font: 400 20px Tahoma, sans-serif;
+      line-height: 1.8;
+      color: black;
+      background: white;
+      max-width: 1400px;
+      margin: auto;
+  }
+ 
+div {
+    width: 360px;
+    padding: 10px;
+    margin: auto;
+}
+
+/* Specificity = 001 */  
+h1 {
+	  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	  font-size: 6em;
+      color: white;
+	  padding: 5px 5px;
+      text-transform: uppercase;
+      text-align: center;
+      background-color:#ab2a3e;
+  }
+
+/* Specificity = 001 */
+h2{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	color: black;
+}
+
+/* Specificity = 001 */
+p{
+	background-color: white;
+	text-align: left;
+}
+
+/* Specificity = 001 */
+ ul{
+	background: white;
+	padding: 10px;
+} 
+
+/* Specificity = 001 */
+li{
+	color: black;
+	text-align: left;
+	line-height: 1.5;
+	background-color: white;
+	list-style-position:inside;
+}
+
+li a{
+    font-size: 20px;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav{
+	clear: both;
+	text-align: center;
+	width: 100%;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+
+nav li{
+	display: inline-block;
+	font-family: "Lato", Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	line-height: 1;
+	text-align: left;
+    background-color: transparent;
+}
+
+nav a{
+	color: #302a2c;
+	display: block;
+	font-style: normal;
+	padding: 5px;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 10px;
+    border-bottom: none;
+}
+
+nav a:hover,
+nav a:focus,
+nav li.selected a{
+	color: #ab2a3e;
+}
+input{
+    padding: 8px;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 120px;
+}
+input[type=button]:hover{
+  background-color: #ab2a3e;
+}
+input[type=button]:active{
+  background-color: #ab2a3e;
+  box-shadow: 0 3px #666;
+  transform: translateY(2px);  
+}
+input[type=textfield] {
+    background-color: white;
+    color: black;
+    padding: 8px 32px;
+    font-size: 20px;
+    margin: 8px 0;
+    border-radius: 1px;
+    text-align: left;
+    background: #ccc;
+}
+
+a{
+    font-size: 30px;	
+}
+
+a img,
+li a{
+    padding: 10px;
+}

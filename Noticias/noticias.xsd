@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="articulos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="articulo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="articulo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="título" />
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="autor" />
+        <xs:element ref="palabrasClave" />
+        <xs:element ref="resumen" />
+        <xs:element ref="páginaWeb" />
+        <xs:element ref="año" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="título" type="xs:string" />
+  <xs:element name="autor">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="twitter" type="xs:string" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="palabrasClave" type="xs:string" />
+  <xs:element name="resumen" type="xs:string" />
+  <xs:element name="páginaWeb">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="enlace" type="xs:string" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="año" type="xs:integer" />
+</xs:schema>

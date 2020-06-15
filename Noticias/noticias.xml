@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./noticias.xsl"?>
+
+<articulos>
+<articulo>
+<titulo>'Reflex', el proyecto que quiere poner en el mercado la primera cámara SLR de 35 mm en 25 años</titulo>
+<autores> 
+<autor email="oscarxkt@gmail.com" twitter="@hoskarxataka">Óscar Condés</autor>
+<autor email="martinexkt@gmail.com" twitter="@mmartxataka">Mario Martínez</autor>
+</autores>
+<fecha>
+<dia>4</dia>
+<mes>Abril</mes>
+<ao>2017</ao>
+</fecha>
+<medio enlace="https://www.xatakafoto.com/actualidad/reflex-el-proyecto-que-quiere-poner-en-el-mercado-la-primera-camara-slr-de-35-mm-en-25-anos">Xataka foto</medio>
+<palabrasClave>réflex, actualidad, fotografía analógica, fotografía química, película, vintage, cámaras analógicas</palabrasClave>
+<resumen>'Reflex' pretende poner en circulación la primera cámara réflex manual de película que se comercializa en el último cuarto de siglo. 
+Trata de ser una actualización moderna de la cámara de película de 35mm de uso manual con un diseño intemporal.</resumen>
+<fotografias>
+<fotografia>
+<fotografo>Mario Martínez</fotografo>
+<camara>Sony X11</camara>
+<objetivo>Sony 200mm</objetivo>
+<ISO>1200</ISO>
+<apertura>5.6</apertura>
+<coloresPrincipales>
+<rgbColor>100,32,36</rgbColor>
+<rgbColor>120,200,56</rgbColor>
+<rgbColor>30,21,99</rgbColor>
+</coloresPrincipales>
+<horaFotografia>16:45:33</horaFotografia>
+<coordenadas>51.22,-33.55</coordenadas>
+<descripcionFotografia>Atardecer soleado</descripcionFotografia>
+<hastags>
+<hastag>sol</hastag>
+<hastag>atardecer</hastag>
+<hastag>puestadesol</hastag>
+</hastags>
+</fotografia>
+<fotografia>
+<fotografo>Mario Martínez</fotografo>
+<camara>Sony X11</camara>
+<objetivo>Sony 200mm</objetivo>
+<ISO>200</ISO>
+<apertura>8</apertura>
+<coloresPrincipales>
+<rgbColor>200,32,86</rgbColor>
+<rgbColor>220,100,26</rgbColor>
+<rgbColor>230,121,19</rgbColor>
+</coloresPrincipales>
+<horaFotografia>16:50:33</horaFotografia>
+<coordenadas>51.21,-33.55</coordenadas>
+<descripcionFotografia>Puesta de sol sobre mar</descripcionFotografia>
+<hastags>
+<hastag>sol</hastag>
+<hastag>mar</hastag>
+<hastag>oceano</hastag>
+</hastags>
+</fotografia>
+</fotografias>
+<tipo>Proyecto</tipo>
+</articulo>
+
+<articulo>
+<titulo>Revival analógico: Kodak resucita la película Ektachrome y estudia hacer lo mismo con la Kodakchrome</titulo>
+<autores> 
+<autor email="oscarxkt@gmail.com" twitter="@hoskarxataka">Óscar Condés</autor>
+<autor email="pauxkt@gmail.com">Paula Sastre</autor>
+</autores>
+<fecha>
+<dia>20</dia>
+<mes>Noviembre</mes>
+<ao>2017</ao>
+</fecha>
+<medio enlace="https://www.xatakafoto.com/actualidad/revival-analogico-kodak-resucita-la-pelicula-ektachrome-y-estudia-hacer-lo-mismo-con-la-kodakchrome">Xataka foto</medio>
+<palabrasClave>Kodak, actualidad, fotografía analógica, fotografía química, película</palabrasClave>
+<resumen>Kodak resucita su película Ektachrome y está considerando hacer lo mismo con la Kodakchrome, 
+debido al resurgimiento del interés por tomar imágenes con película analógica.</resumen>
+<fotografias>
+<fotografia>
+<fotografo>Paula Sastre</fotografo>
+<camara>Minolta TC-1</camara>
+<objetivo>Rokkor 28mm</objetivo>
+<ISO>100</ISO>
+<apertura>3.5</apertura>
+<coloresPrincipales>
+<rgbColor>10,92,136</rgbColor>
+<rgbColor>10,20,56</rgbColor>
+<rgbColor>30,201,99</rgbColor>
+</coloresPrincipales>
+<horaFotografia>09:15:05</horaFotografia>
+<coordenadas>11.33,33.22</coordenadas>
+<descripcionFotografia>Retrato 1</descripcionFotografia>
+<hastags>
+<hastag>ecktachrome</hastag>
+<hastag>retrato</hastag>
+</hastags>
+</fotografia>
+<fotografia>
+<fotografo>Paula Sastre</fotografo>
+<camara>Minolta TC-1</camara>
+<objetivo>Rokkor 28mm</objetivo>
+<ISO>100</ISO>
+<apertura>8</apertura>
+<coloresPrincipales>
+<rgbColor>220,32,86</rgbColor>
+<rgbColor>120,230,26</rgbColor>
+<rgbColor>30,12,19</rgbColor>
+</coloresPrincipales>
+<horaFotografia>09:17:03</horaFotografia>
+<coordenadas>11.34,33.24</coordenadas>
+<descripcionFotografia>Retrato 2</descripcionFotografia>
+<hastags>
+<hastag>ecktachrome</hastag>
+<hastag>retrato</hastag>
+</hastags>
+</fotografia>
+</fotografias>
+<tipo>Pelicula</tipo>
+</articulo>
+    
+<articulo>
+<titulo>Osiris F1, un procesador de película completo y automático por 1100 euros</titulo>
+<autores> 
+<autor email="oscarxkt@gmail.com" twitter="@hoskarxataka">Óscar Condés</autor>
+<autor email="danixkt@gmail.com" twitter="@lunadecemento">Daniel Jiménez</autor>
+<autor email="pauxkt@gmail.com">Paula Sastre</autor>
+</autores>
+<fecha>
+<dia>2</dia>
+<mes>Junio</mes>
+<ao>2016</ao>
+</fecha>
+<medio enlace="https://www.xatakafoto.com/accesorios/osiris-f1-un-procesador-de-pelicula-completo-y-automatico-por-1100-euros">Xataka foto</medio>
+<palabrasClave>Kodak, actualidad, fotografía analógica, fotografía química, película</palabrasClave>
+<resumen>En Osiris Film Technology se han decidido a revivir la fotografía química a lo grande con el Osiris F1, un completo procesador casero que nos permite procesar nuestros carretes completamente automática. 
+Los procesos soportados son C-41, E-6 y blanco y negro. </resumen>
+<fotografias>
+<fotografia>
+<fotografo>Paula Sastre</fotografo>
+<camara>Minolta TC-1</camara>
+<objetivo>Rokkor 28mm</objetivo>
+<ISO>400</ISO>
+<apertura>16</apertura>
+<coloresPrincipales>
+<rgbColor>100,92,136</rgbColor>
+<rgbColor>106,220,16</rgbColor>
+</coloresPrincipales>
+<horaFotografia>22:15:05</horaFotografia>
+<coordenadas>9.33,31.02</coordenadas>
+<descripcionFotografia>Larga exposición</descripcionFotografia>
+<hastags>
+<hastag>trix</hastag>
+<hastag>noche</hastag>
+</hastags>
+</fotografia>
+</fotografias>
+<tipo>Pelicula</tipo>
+</articulo>
+</articulos>

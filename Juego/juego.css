@@ -1,0 +1,88 @@
+
+/* Specificity = 001 */
+body {
+      font: 400 20px Tahoma, sans-serif;
+      line-height: 1;
+      color: black;
+      background: white;
+      max-width: 1400px;
+      margin: auto;
+  }
+
+div {
+    width: 360px;
+    padding: 10px;
+    margin: auto;
+}
+
+/* Specificity = 001 */  
+h1 {
+	  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	  font-size: 6em;
+      color: white;
+	  padding: 5px 5px;
+      text-transform: uppercase;
+      text-align: center;
+      background-color:#ab2a3e;
+	  line-height: 1.8;
+  }
+
+/* Specificity = 001 */
+h2{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	color: black;
+}
+
+nav{
+	clear: both;
+	text-align: center;
+	width: 100%;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+
+nav ul{
+    background: #ffffff;
+    padding: 0px;
+}
+
+nav li{
+	display: inline-block;
+	font-family: "Lato", Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	line-height: 1;
+	text-align: left;
+    background-color: transparent;
+}
+
+nav a{
+	color: #302a2c;
+	display: block;
+	font-style: normal;
+	padding: 10px;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 10px;
+    border-bottom: none;
+}
+
+nav a:hover,
+nav a:focus,
+nav li.selected a{
+	color: #ab2a3e;
+}
+
+canvas{
+	border: 3px solid black;
+}
+
+a img,
+li a{
+    padding: 10px;
+}

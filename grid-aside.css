@@ -1,0 +1,37 @@
+@import "principal.css";
+
+/* Specificity = 001 */ 
+body{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "header header"
+                         "nav nav"
+                         "content aside"
+                         "footer ...";
+}
+
+/* Specificity = 001 */ 
+nav{
+    grid-area: nav;
+}
+
+/* Specificity = 001 */ 
+header{
+    grid-area: header;
+}
+
+/* Specificity = 001 */ 
+main{
+    grid-area: content;
+}
+
+/* Specificity = 001 */ 
+aside{
+    grid-area: aside;
+}
+
+/* Specificity = 001 */ 
+footer{
+    grid-area: footer;
+}

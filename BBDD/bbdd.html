@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+	<meta name="auhor" content="UO250721"/>    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+    <title>UNS - Base de datos</title>
+    <link rel="stylesheet" type="text/css" href="bbdd.css" />
+</head>
+
+
+<body>
+    <div><h1>UNS</h1></div>
+    
+    <nav>
+        <ul>
+        <li><a href="../index.html">Bienvenido</a></li>
+        <li><a href="../Noticias/noticias.xml">Noticias</a></li>
+        <li><a href="../Mapa/mapa.html">Mapa y tiempo</a></li>
+        <li><a href="../Busqueda/busqueda.html">Búsquedas</a></li>
+        <li class="selected"><a href="../BBDD/bbdd.html">Base de datos</a></li>
+		<li><a href="../Juego/juego.html">Juego</a></li>
+        <li><a href="../About/about.html">Autor</a></li>
+        </ul>
+    </nav>
+    
+	<map name="indice">
+		<p>
+            <a href="http://localhost/BBDD/CrearBase.php"> Crear base </a>
+        </p>
+        <p>
+			<a href="http://localhost/BBDD/CrearTabla.php"> Crear tablas </a>
+        </p>
+        
+            <h2>Insertar filas</h2>
+        
+            <h3>Insertar fila en tabla USUARIO</h3>
+            
+			<form action="http://localhost/BBDD/InsertarUsuario.php" method="post">
+                <p>Nombre de usuario: <input type="text" name="nombre_usuario" /></p>
+                <p>Nombre:  <input type="text" name="nombre" /></p>
+                <p>Apellidos:  <input type="text" name="apellidos" /></p>
+                <p>Ciudad:  <input type="text" name="ciudad" /></p>
+                <p>Modalidad:  <input type="text" name="modalidad" /></p>
+            <input type="submit" name="submit" value="Añadir" />
+            </form> 
+        
+            <h3>Insertar fila en tabla TIENDA</h3>
+            
+			<form action="http://localhost/BBDD/InsertarTienda.php" method="post">
+                <p>Nombre: <input type="text" name="nombret" /></p> 
+                <p>Ciudad:  <input type="text" name="ciudadt" /></p>
+            <input type="submit" name="submit" value="Añadir" />
+            </form>
+        
+            <h3>Insertar fila en tabla CAMARA</h3>
+            
+			<form action="http://localhost/BBDD/InsertarCamara.php" method="post">
+                <p>Marca: <input type="text" name="marca" /></p> 
+                <p>Modelo:  <input type="text" name="modelo" /></p>
+                <p>Tipo:  <input type="text" name="tipo" /></p>
+                <p>Formato:  <input type="text" name="formato" /></p>
+            <input type="submit" name="submit" value="Añadir" />
+            </form>
+        
+            <h3>Insertar fila en tabla DISTRIBUCION</h3>
+            
+			<form action="http://localhost/BBDD/InsertarDistribucion.php" method="post">
+                <p>Id cámara: <input type="text" name="idcam" /></p> 
+                <p>Id tienda:  <input type="text" name="idtienda" /></p>
+            <input type="submit" name="submit" value="Añadir" />
+            </form> 
+        
+            <h3>Insertar fila en tabla VENTA</h3>
+            
+			<form action="http://localhost/BBDD/InsertarVenta.php" method="post">
+                <p>Nombre de usuario: <input type="text" name="nombre_usuario" /></p> 
+                <p>Id cámara:  <input type="text" name="idcam" /></p>
+                <p>Id tienda:  <input type="text" name="idtienda" /></p>
+                <p>Número de veces vendida:  <input type="text" name="numventa" /></p>
+                <p>Precio:  <input type="text" name="precio" /></p>
+            <input type="submit" name="submit" value="Añadir" />
+            </form> 
+        
+            <h2>Busquedas</h2>
+        
+            <h3>Buscar en tabla USUARIO</h3>
+            
+			<form method="get" action="http://localhost/BBDD/BuscarUsuario.php">
+                <p>Buscar nombre de usuario: <input type="text" name="busqueda_usuario" /></p>
+            <input type="submit" name="submit" value="Buscar" />
+            </form> 
+        
+            <h3>Buscar en tabla CAMARA</h3>
+            
+			<form method="get" action="http://localhost/BBDD/BuscarCamara.php">
+                <p>Buscar id cámara: <input type="text" name="busqueda_camara" /></p> 
+            <input type="submit" name="submit" value="Buscar" />
+            </form> 
+        
+            <h2>Borrar</h2>
+        
+            <h3>Borrar en tabla USUARIO</h3>
+            
+			<form method="get" action="http://localhost/BBDD/BorrarUsuario.php">
+                <p>Borrar nombre de usuario: <input type="text" name="borrar_usuario" /></p>
+            <input type="submit" name="submit" value="Borrar" />
+            </form> 
+        
+            <h3>Borrar en tabla CAMARA</h3>
+            
+			<form method="get" action="http://localhost/BBDD/BorrarCamara.php">
+                <p>Borrar id cámara: <input type="text" name="borrar_camara" /></p> 
+            <input type="submit" name="submit" value="Borrar" />
+            </form> 
+	</map>
+    
+    
+    
+	 <footer>
+	
+      <a href="https://validator.w3.org/check?uri=referer"><img
+          src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"
+          alt="HTML5 Válido" title="HTML5 Válido" height="64" width="63" /></a>
+        
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="¡CSS Válido!" />
+      </a>
+        
+    </footer>
+    
+</body>
+</html>

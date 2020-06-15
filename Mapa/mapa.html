@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UNS - Mapa y tiempo</title>
+<!-- Leaflet css and API -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+crossorigin=""></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<link rel="stylesheet" href="grid-mapa.css"/>
+<script src="mapa.js"></script>
+</head>
+<body>
+    
+<header>   
+    <div><h1>UNS</h1></div>
+</header>
+
+<nav>
+    <ul>
+    <li><a href="../index.html">Bienvenido</a></li>
+    <li><a href="../Noticias/noticias.xml">Noticias</a></li>
+    <li class="selected"><a href="../Mapa/mapa.html">Mapa y tiempo</a></li>
+    <li><a href="../Busqueda/busqueda.html">Búsquedas</a></li>
+    <li><a href="../BBDD/bbdd.html">Base de datos</a></li>
+    <li><a href="../Juego/juego.html">Juego</a></li>
+    <li><a href="../About/about.html">Autor</a></li>
+    </ul>
+</nav>
+
+<main>
+<section id="situar">
+    <h2>Pulsa aquí para ser situado</h2>
+    <input type="button" value="Sitúame" onClick="miMapa.mostrar();"/>
+</section>
+
+<section id="ciudad">
+    <h2>Ciudad</h2>
+</section>
+
+<div id="mapid"></div>
+</main>
+
+<aside>
+<section id="tiempo">
+    <h2>Tiempo</h2>
+</section>
+</aside>
+
+<footer>
+      <a href="https://validator.w3.org/check?uri=referer"><img
+          src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"
+          alt="HTML5 Válido" title="HTML5 Válido" height="64" width="63" /></a>
+        
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="¡CSS Válido!" />
+      </a>
+        
+</footer>
+</body>
+</html>

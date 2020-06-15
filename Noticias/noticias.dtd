@@ -1,0 +1,30 @@
+<!ELEMENT articulos (articulo+)>
+<!ELEMENT articulo (titulo, autores, fecha, medio, palabrasClave, resumen, fotografias, tipo)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autores (autor+)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT fecha (dia, mes, ao)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT ao (#PCDATA)>
+<!ELEMENT medio (#PCDATA)>
+<!ELEMENT palabrasClave (#PCDATA)>
+<!ELEMENT resumen (#PCDATA)>
+<!ELEMENT fotografias (fotografia+)>
+<!ELEMENT fotografia (fotografo, camara, objetivo, ISO, apertura, coloresPrincipales, horaFotografia, coordenadas, descripcionFotografia, hastags)>
+<!ELEMENT fotografo (#PCDATA)>
+<!ELEMENT camara (#PCDATA)>
+<!ELEMENT objetivo (#PCDATA)>
+<!ELEMENT ISO (#PCDATA)>
+<!ELEMENT apertura (#PCDATA)>
+<!ELEMENT coloresPrincipales (rgbColor+)>
+<!ELEMENT rgbColor (#PCDATA)>
+<!ELEMENT horaFotografia (#PCDATA)>
+<!ELEMENT coordenadas (#PCDATA)>
+<!ELEMENT descripcionFotografia (#PCDATA)>
+<!ELEMENT hastags (hastag+)>
+<!ELEMENT hastag (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ATTLIST autor email CDATA #REQUIRED>
+<!ATTLIST autor twitter CDATA #IMPLIED>
+<!ATTLIST medio enlace CDATA #REQUIRED>
