@@ -45,7 +45,7 @@ class Mapa {
 
         var unidades = "&units=metric";
         var idioma = "&lang=es";
-        var url = "http://api.openweathermap.org/data/2.5/weather?lat=" + this.latit + "&lon=" + this.longit + unidades + idioma + "&APPID=" + apikey;
+        var url = "https://api.openweathermap.org/data/2.5/weather?lat=" + this.latit + "&lon=" + this.longit + unidades + idioma + "&APPID=" + apikey;
         var correcto = "Todo correcto";
         
         $.ajax({
