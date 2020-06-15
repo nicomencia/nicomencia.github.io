@@ -53,7 +53,6 @@
     <xsl:template match="articulo">
 		<xsl:apply-templates select="titulo"/>
         <xsl:apply-templates select="medio"/>
-        <ul> Autores<xsl:apply-templates select="autor"/> </ul>
 		<xsl:apply-templates select="tipo"/>
         <xsl:apply-templates select="palabrasClave"/>
 		<xsl:apply-templates select="resumen"/>
@@ -72,11 +71,6 @@
         Enlace a la noticia
     </xsl:element>
 	</xsl:template>
-    
-    <xsl:template match="autor">
-	<li> <xsl:value-of select="."/> (<xsl:value-of select="./@twitter"/>)  </li>
-	</xsl:template>
-    
 
     <xsl:template match="tipo">
 	<p>Tipo: <xsl:value-of select="."/></p>
