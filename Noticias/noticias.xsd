@@ -1,44 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="articulos">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="1" maxOccurs="unbounded" ref="articulo" />
+        <xs:element name="articulo" maxOccurs="unbounded" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="titulo"/>
+              <xs:element name="autores">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="autor" maxOccurs="unbounded" minOccurs="1">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="email" use="required"/>
+                            <xs:attribute type="xs:string" name="twitter" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="fecha">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="dia"/>
+                    <xs:element type="xs:string" name="mes"/>
+                    <xs:element type="xs:short" name="ao"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="medio">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="enlace" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="palabrasClave"/>
+              <xs:element type="xs:string" name="resumen"/>
+              <xs:element name="fotografias">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="fotografia" maxOccurs="unbounded" minOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="fotografo"/>
+                          <xs:element type="xs:string" name="camara"/>
+                          <xs:element type="xs:string" name="objetivo"/>
+                          <xs:element type="xs:short" name="ISO"/>
+                          <xs:element type="xs:float" name="apertura"/>
+                          <xs:element name="coloresPrincipales">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="rgbColor" maxOccurs="unbounded" minOccurs="1"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:time" name="horaFotografia"/>
+                          <xs:element type="xs:string" name="coordenadas"/>
+                          <xs:element type="xs:string" name="descripcionFotografia"/>
+                          <xs:element name="hastags">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="hastag" maxOccurs="unbounded" minOccurs="1"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="tipo"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="articulo">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element ref="título" />
-        <xs:element minOccurs="1" maxOccurs="unbounded" ref="autor" />
-        <xs:element ref="palabrasClave" />
-        <xs:element ref="resumen" />
-        <xs:element ref="páginaWeb" />
-        <xs:element ref="año" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="título" type="xs:string" />
-  <xs:element name="autor">
-    <xs:complexType>
-      <xs:simpleContent>
-        <xs:extension base="xs:string">
-          <xs:attribute name="twitter" type="xs:string" />
-        </xs:extension>
-      </xs:simpleContent>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="palabrasClave" type="xs:string" />
-  <xs:element name="resumen" type="xs:string" />
-  <xs:element name="páginaWeb">
-    <xs:complexType>
-      <xs:simpleContent>
-        <xs:extension base="xs:string">
-          <xs:attribute name="enlace" type="xs:string" />
-        </xs:extension>
-      </xs:simpleContent>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="año" type="xs:integer" />
 </xs:schema>
