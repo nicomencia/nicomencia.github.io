@@ -33,7 +33,7 @@ class Mapa {
         var tiempo=document.getElementById('tiempo');
 
         //Leaflet API
-        var mymap = L.map('mapid').setView([41.6551800, -4.7237200], 6)
+        var mymap = L.map('mapid').setView([41.6551800, -4.7237200], 5)
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         }).addTo(mymap);
@@ -44,16 +44,10 @@ class Mapa {
 
         var latlngs = Array();
 
-        //Get latlng from first marker
-        latlngs.push(marker1.getLatLng());
+        latlngs.push([this.latit, this.longit]);
 
-        //Get latlng from first marker
-        latlngs.push(marker2.getLatLng());
+        latlngs.push([40.4340401, -3.7037899]);
 
-        //You can just keep adding markers
-
-        //From documentation http://leafletjs.com/reference.html#polyline
-        // create a red polyline from an arrays of LatLng points
         L.polyline(latlngs, {color: 'red'}).addTo(map);
 
         //OpenWeatherMap API
