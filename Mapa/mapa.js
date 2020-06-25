@@ -46,7 +46,7 @@ class Mapa {
             [40.4340401, -3.7037899]
         ];
 
-
+        L.polyline(latlngs, {color: 'red'}).addTo(mymap);
 
         //OpenWeatherMap API
         var apikey = "7ebd05f34706216cd71b3c640553d05f";
