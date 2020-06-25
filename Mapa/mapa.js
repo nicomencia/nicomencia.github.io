@@ -33,7 +33,7 @@ class Mapa {
         var tiempo=document.getElementById('tiempo');
 
         //Leaflet API
-        var mymap = L.map('mapid').setView([this.latit, this.longit], 13)
+        var mymap = L.map('mapid').setView([41.6551800, -4.7237200], 5)
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         }).addTo(mymap);
@@ -41,7 +41,7 @@ class Mapa {
         L.marker([this.latit, this.longit]).addTo(mymap);
 
         L.marker([40.4340401, -3.7037899]).addTo(mymap);
-        
+
         //OpenWeatherMap API
         var apikey = "7ebd05f34706216cd71b3c640553d05f";
 
