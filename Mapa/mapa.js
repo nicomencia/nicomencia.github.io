@@ -44,9 +44,8 @@ class Mapa {
 
         var latlngs = Array();
 
-        latlngs.push([this.latit, this.longit]);
-
-        latlngs.push([40.4340401, -3.7037899]);
+        latlngs.push(this.latit, this.longit);
+        latlngs.push(40.4340401, -3.7037899);
 
         L.polyline(latlngs, {color: 'red'}).addTo(map);
 
