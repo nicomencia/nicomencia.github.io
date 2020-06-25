@@ -39,7 +39,6 @@ class Mapa {
         }).addTo(mymap);
         
         L.marker([this.latit, this.longit]).addTo(mymap);
-
         L.marker([40.4340401, -3.7037899]).addTo(mymap);
 
         var latlngs = [
@@ -47,7 +46,7 @@ class Mapa {
             [40.4340401, -3.7037899]
         ];
 
-        L.polyline(latlngs, {color: 'red'}).addTo(map);
+
 
         //OpenWeatherMap API
         var apikey = "7ebd05f34706216cd71b3c640553d05f";
